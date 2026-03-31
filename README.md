@@ -5,7 +5,7 @@
 Скрипты(.config/kripts) : Кастомные скрипты(кроме zoom.sh) нужны чтобы все было идеально.
 Опен-сурс: это я не знаю причем но типо это опенсурс вау круто без вирусов.
 Зелёный стиль: Изначально я хотел типо Material 3 You стиль, но получилось это.
-Поддержка: тоже не знаю причем тут это но мой [дискорд](https://discord.com/users/1286969036780998667)
+Поддержка: тоже не знаю причем тут это но мой дискорд https://discord.com/users/1286969036780998667
 Подходит для старых ПК: у меня старый компьютер на нем 3гб опры и AMD A6400K и оно летает, 0.7гб если ничего не открывать
 ```
 
@@ -34,7 +34,7 @@ sudo pacman -S hyprland hyprlock hypridle waybar wofi mako kitty dolphin \
 grim slurp wl-clipboard jq wireguard-tools network-manager-applet \
 playerctl fastfetch libnotify ttf-jetbrains-mono-nerd
 ```
-3. Зайдите в папку с дотфайлами и напишите в терминал
+2. Зайдите в папку с дотфайлами и напишите в терминал
 
 Для бекапа
 ```
@@ -44,7 +44,7 @@ mv ~/.config/wofi ~/dotfiles_backup/ 2>/dev/null
 mv ~/.config/mako ~/dotfiles_backup/ 2>/dev/null
 ```
 
-Перемещение дотфайлов в нужную папку
+3. Перемещение дотфайлов в нужную папку
 `cp * ~/.config`
 4. Зайдите в сессию с hyprland
 5. должно все работать удачи 
@@ -54,13 +54,14 @@ mv ~/.config/mako ~/dotfiles_backup/ 2>/dev/null
 
 ## Green dotfiles for Hyprland
 ### ✨ Features
-
+```
 Custom Scripts: Located in .config/kripts (except for zoom.sh). These scripts are the brain of the setup, making everything work perfectly.
 Open Source: Fully transparent, me-driven, and virus-free.
 Green Aesthetic: Originally inspired by Material 3 You, it evolved into this unique forest-green theme.
     Support: If you need help, catch me on Discord.
     Low-End PC Friendly: Tested on an old AMD A6400K with 3GB RAM. It flies! Idle RAM usage is only 0.7GB.
     Solid Wiki: A detailed and easy-to-follow wiki for all your needs.
+```
 ### ⌨️ Keybindings (Super = Windows Key)
     Super + Enter (or Q) = Open Terminal (Kitty)
     Super + W = Open Browser (Firefox)
