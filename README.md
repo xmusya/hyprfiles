@@ -105,3 +105,5 @@ mv ~/.config/fastfetch ~dotfiles_backup 2>/dev/null
 ![Control Center](Screenshots/ControlCenter.png)
 ![Wofi or App menu](Screenshots/Wofi.png)
 ![Screenshot menu](Screenshots/Screenshot.png)
+Fastfetch is avaible in .config/fastfetch in the repostiory
+Фастфетч есть в .config/fastfetch репозитория
