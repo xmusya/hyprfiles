@@ -103,5 +103,5 @@ mv ~/.config/fastfetch ~dotfiles_backup 2>/dev/null
 ![Larp](Screenshots/larp.png)
 ![Power Menu](Screenshots/PowerMenu.png)
 ![Control Center](Screenshots/ControlCenter.png)
-![Wofi/App menu](Screenshots/wofi.png)
+![Wofi or App menu](Screenshots/wofi.png)
 ![Screenshot menu](Screenshots/Screenshot.png)
