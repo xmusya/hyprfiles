@@ -1,6 +1,6 @@
-# 🌿 hyprfiles (LUA)
+# 🌊 hyprfiles (LUA)
 
-Мои dotfiles для [Hyprland](https://hypr.land) — зелёная тема, конфиг на **Lua**, без жира.
+Мои dotfiles для [Hyprland](https://hypr.land) — голубая тема, конфиг на **Lua**, без жира.
 
 ## ✨ Фичи
 
@@ -100,6 +100,7 @@ sudo pacman -S hyprland hyprlock hypridle waybar swaync fuzzel alacritty \
     wireguard-tools network-manager-applet playerctl wireplumber \
     fastfetch jq libnotify ttf-jetbrains-mono-nerd polychromatic
 ```
+Для NixOS есть зависимости в `nixos/hypr.nix`
 
 Фонты: `Readex Pro`, `RobotoMono Nerd Font`, `SF Pro Rounded`, курсор `Bibata-Modern-Ice`.
 
@@ -107,7 +108,6 @@ sudo pacman -S hyprland hyprlock hypridle waybar swaync fuzzel alacritty \
 
 - В конфигах есть захардкоженные пути пользователя (`/home/pasha/...`) — замените на свои:
   - фон hyprlock в `hypr/hyprlock.conf`
-  - фон для wikiHub в `kripts/wikiHubs/wikihub` (если используете)
 - Обои лежат отдельно: [xmusya/wallpapers](https://github.com/xmusya/wallpapers)
 - `kripts/games/*` — опциональные pygame-игры для оффлайна (`python djump.py` и т.д.)
 
