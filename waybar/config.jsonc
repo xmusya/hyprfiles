@@ -4,7 +4,7 @@
     "height": 34,
     "modules-left": ["custom/apps", "custom/cliphist", "hyprland/window"],
     "modules-center": ["hyprland/workspaces", "tray"],
-    "modules-right": ["cpu", "memory", "memory#swap", "hyprland/language", "pulseaudio", "clock", "custom/notification", "custom/power"],
+    "modules-right": ["cpu", "memory", "memory#swap", "hyprland/language", "pulseaudio", "custom/clock", "custom/notification", "custom/power"],
     "hyprland/window": { "format": "{title}", "max-length": 25 },
     "hyprland/workspaces": { "persistent-workspaces": { "*": 7 } },
 "tray": {
@@ -27,8 +27,17 @@
         "format-ru": "RU",
         "on-click": "hyprctl switchxkblayout all next"
     },
-    "clock": { "format": "{:%H:%M}" },
-    "pulseaudio": { "format": "󰕾 {volume}%" },
+    "custom/clock": {
+        "format": "{}",
+        "exec": "~/.config/kripts/system/clock.sh",
+        "interval": 60,
+        "return-type": "json",
+        "tooltip": true
+    },
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        "on-click": "pavucontrol"
+    },
     "custom/apps": {
         "format": "",
         "on-click": "pkill fuzzel || fuzzel"

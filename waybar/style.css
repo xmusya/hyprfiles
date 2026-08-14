@@ -24,7 +24,7 @@
 
  /* ОБЩИЙ СТИЛЬ ПИЛЮЛЬ */
 
- #cpu, #memory, #clock, #pulseaudio, #language, #tray, #workspaces, #window, #custom-cliphist, #custom-notification {
+ #cpu, #memory, #clock, #custom-clock, #pulseaudio, #language, #tray, #workspaces, #window, #custom-cliphist, #custom-notification {
 
  background: rgba(40, 42, 47, 0.8);
 
