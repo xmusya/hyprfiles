@@ -62,7 +62,7 @@ hl.bind(mainMod .. " + ALT + " .. KEY_6, hl.dsp.window.move({ workspace = 6, fol
 hl.bind(mainMod .. " + ALT + " .. KEY_7, hl.dsp.window.move({ workspace = 7, follow = false }))
 
 -- ============ ЗВУК ============
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"), { repeating = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume --limit 1.5 @DEFAULT_AUDIO_SINK@ 5%+"), { repeating = true })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"), { repeating = true })
 hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"))
 hl.bind("XF86AudioPlay",        hl.dsp.exec_cmd("playerctl play-pause"))
