@@ -10,7 +10,7 @@ case $1 in
     inc)
         # Увеличиваем
         new=$(awk "BEGIN {print $current + $step}")
-        hyprctl keyword cursor:zoom_factor $new
+        hyprctl eval "hl.config({ cursor = { zoom_factor = $new } })"
         ;;
     dec)
         # Уменьшаем, но не ниже 1.0
@@ -20,13 +20,13 @@ case $1 in
             # Проверка, чтобы не уйти в минус или меньше единицы
             is_too_low=$(awk "BEGIN {print ($new < 1.0) ? 1 : 0}")
             if [ "$is_too_low" -eq 1 ]; then new=1.0; fi
-            hyprctl keyword cursor:zoom_factor $new
+            hyprctl eval "hl.config({ cursor = { zoom_factor = $new } })"
         else
-            hyprctl keyword cursor:zoom_factor 1.0
+            hyprctl eval "hl.config({ cursor = { zoom_factor = 1.0 } })"
         fi
         ;;
     reset)
-        hyprctl keyword cursor:zoom_factor 1.0
+        hyprctl eval "hl.config({ cursor = { zoom_factor = 1.0 } })"
         ;;
 esac
 

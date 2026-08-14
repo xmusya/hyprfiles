@@ -32,7 +32,7 @@ hl.bind(mainMod .. " + End",            hl.dsp.exec_cmd(kriptsInterface .. "/mai
 hl.bind(mainMod .. " + equal",                hl.dsp.exec_cmd(kriptsSystem .. "/zoom.sh inc"))
 hl.bind(mainMod .. " + minus",                hl.dsp.exec_cmd(kriptsSystem .. "/zoom.sh dec"))
 hl.bind(mainMod .. " + CONTROL + " .. KEY_0,  hl.dsp.exec_cmd(kriptsSystem .. "/zoom.sh reset"))
-hl.bind(mainMod .. " + " .. KEY_0,            hl.dsp.exec_cmd("hyprctl keyword cursor:zoom_factor 1.0"))
+hl.bind(mainMod .. " + " .. KEY_0,            hl.dsp.exec_cmd("hyprctl eval 'hl.config({ cursor = { zoom_factor = 1.0 } })'"))
 hl.bind(mainMod .. " + mouse_up",             hl.dsp.exec_cmd(kriptsSystem .. "/zoom.sh inc"))
 hl.bind(mainMod .. " + mouse_down",           hl.dsp.exec_cmd(kriptsSystem .. "/zoom.sh dec"))
 
