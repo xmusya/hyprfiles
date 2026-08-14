@@ -113,8 +113,21 @@ sudo pacman -S hyprland hyprlock hypridle waybar swaync fuzzel alacritty \
 
 ## 📸 Скриншоты
 
-![full](Screenshots/full.png)
-![fuzzel](Screenshots/fuzzel.png)
-![main menu](Screenshots/mainmenu.png)
-![power menu](Screenshots/powermenu.png)
-![screenshot menu](Screenshots/screenshot.png)
+<table align="center">
+  <tr>
+    <td align="center"><img src="Screenshots/full.png" width="420"><br><sub>Полный рабочий стол</sub></td>
+    <td align="center"><img src="Screenshots/fuzzel.png" width="420"><br><sub>Лаунчер fuzzel</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Screenshots/mainmenu.png" width="420"><br><sub>Control Center</sub></td>
+    <td align="center"><img src="Screenshots/powermenu.png" width="420"><br><sub>Power Menu</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Screenshots/screenshot.png" width="420"><br><sub>Меню скриншотов</sub></td>
+    <td align="center"><img src="Screenshots/swaync.png" width="420"><br><sub>Уведомления swaync</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Screenshots/notification.png" width="420"><br><sub>Нотификация</sub></td>
+    <td></td>
+  </tr>
+</table>
