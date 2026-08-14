@@ -1,3 +1,6 @@
+OLD VERSION! CHECK "main" BRANCH
+THIS VERSION DOESNT SUPPORT HYPRLAND LUAFICATION
+
 # 🇷🇺 Russian version
 ## Зелёные дотфайлы для [hyprland](https://hypr.land)
 ### ✨ Оссобености
