@@ -46,6 +46,8 @@ hl.bind(mainMod .. " + " .. KEY_2,     hl.dsp.focus({ workspace = 2 }))
 hl.bind(mainMod .. " + " .. KEY_3,     hl.dsp.focus({ workspace = 3 }))
 hl.bind(mainMod .. " + " .. KEY_4,     hl.dsp.focus({ workspace = 4 }))
 hl.bind(mainMod .. " + " .. KEY_5,     hl.dsp.focus({ workspace = 5 }))
+hl.bind(mainMod .. " + " .. KEY_6,     hl.dsp.focus({ workspace = 6 }))
+hl.bind(mainMod .. " + " .. KEY_7,     hl.dsp.focus({ workspace = 7 }))
 
 hl.bind(mainMod .. " + " .. MOUSE_LEFT,  hl.dsp.window.drag(),    { mouse = true })
 hl.bind(mainMod .. " + " .. MOUSE_RIGHT, hl.dsp.window.resize(), { mouse = true })
@@ -56,6 +58,8 @@ hl.bind(mainMod .. " + ALT + " .. KEY_2, hl.dsp.window.move({ workspace = 2, fol
 hl.bind(mainMod .. " + ALT + " .. KEY_3, hl.dsp.window.move({ workspace = 3, follow = false }))
 hl.bind(mainMod .. " + ALT + " .. KEY_4, hl.dsp.window.move({ workspace = 4, follow = false }))
 hl.bind(mainMod .. " + ALT + " .. KEY_5, hl.dsp.window.move({ workspace = 5, follow = false }))
+hl.bind(mainMod .. " + ALT + " .. KEY_6, hl.dsp.window.move({ workspace = 6, follow = false }))
+hl.bind(mainMod .. " + ALT + " .. KEY_7, hl.dsp.window.move({ workspace = 7, follow = false }))
 
 -- ============ ЗВУК ============
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"), { repeating = true })
