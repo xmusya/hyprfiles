@@ -1,0 +1,61 @@
+ {
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "modules-left": ["custom/apps", "custom/cliphist", "hyprland/window"],
+    "modules-center": ["hyprland/workspaces", "tray"],
+    "modules-right": ["cpu", "memory", "memory#swap", "hyprland/language", "pulseaudio", "clock", "custom/notification", "custom/power"],
+    "hyprland/window": { "format": "{title}", "max-length": 25 },
+    "hyprland/workspaces": { "persistent-workspaces": { "*": 5 } },
+"tray": {
+        "icon-size": 16,
+        "spacing": 10,
+        "show-passive-items": true
+    },
+    "cpu": { "format": " {usage}%" },
+    "memory": {
+        "format": " {used:0.1f}GiB/{total:0.1f}GiB",
+        "interval": 5
+    },
+    "memory#swap": {
+        "format": "󰓡 {swapUsed:0.1f}GiB/{swapTotal:0.1f}GiB",
+        "interval": 5
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "US",
+        "format-ru": "RU",
+        "on-click": "hyprctl switchxkblayout all next"
+    },
+    "clock": { "format": "{:%H:%M}" },
+    "pulseaudio": { "format": "󰕾 {volume}%" },
+    "custom/apps": {
+        "format": "",
+        "on-click": "pkill fuzzel || fuzzel"
+    },
+    "custom/cliphist": {
+        "format": "󰅍",
+        "on-click": "cliphist list | fuzzel --dmenu --placeholder 'clipboard...' | cliphist decode | wl-copy",
+        "tooltip": false
+    },
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "󰂛<span foreground='red'><sup></sup></span>",
+            "dnd-none": "󰂛",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "󰂛<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": "󰂛"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
+        "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+        "escape": true
+    }
+}
