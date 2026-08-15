@@ -60,9 +60,10 @@ KEY_F11 = "code:77"
 KEY_F12 = "code:78"
 
 -- ============ МЫШЬ ============
--- примечание: это стандартные X11/evdev индексы для кнопок мыши
-MOUSE_LEFT = "code:272"
-MOUSE_RIGHT = "code:273"
-MOUSE_MIDDLE = "code:274"
-MOUSE_SIDE = "code:275"
-MOUSE_EXTRA = "code:276"
+-- примечание: для мыши нужен префикс mouse: (не code:),
+-- иначе бинды на кнопки не срабатывают
+MOUSE_LEFT = "mouse:272"
+MOUSE_RIGHT = "mouse:273"
+MOUSE_MIDDLE = "mouse:274"
+MOUSE_SIDE = "mouse:275"
+MOUSE_EXTRA = "mouse:276"
