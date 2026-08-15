@@ -69,5 +69,6 @@ hl.bind("XF86AudioPlay",        hl.dsp.exec_cmd("playerctl play-pause"))
 hl.bind("XF86AudioNext",        hl.dsp.exec_cmd("playerctl next"))
 hl.bind("XF86AudioPrev",        hl.dsp.exec_cmd("playerctl previous"))
 
--- ============ ФУЛЛСКРИН (ALT + ENTER) ============
+-- ============ ФУЛЛСКРИН ============
 hl.bind("ALT + Return", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
+hl.bind(mainMod .. " + " .. KEY_F, hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
